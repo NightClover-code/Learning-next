@@ -22,9 +22,9 @@ nav {
   border-bottom: 1px solid #ddd;
   .logo {
     margin-right: auto;
-    a {
-      margin-left: 12px;
-    }
+  }
+  a {
+    margin-left: 12px;
   }
 }
 footer {
@@ -34,4 +34,11 @@ footer {
   margin-top: 60px;
   color: #777;
   border-top: 1px solid #eaeaea;
+}
+.not__found {
+  text-align: center;
+}
+.not__found a {
+  color: #4979ff;
+  text-decoration: underline;
 }
