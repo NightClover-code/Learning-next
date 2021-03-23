@@ -1,5 +1,5 @@
 const AboutPage = () => (
-  <div className="about__page">
+  <div className="about__page ">
     <h1>About</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat culpa quia
