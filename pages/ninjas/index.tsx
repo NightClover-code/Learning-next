@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { GetStaticProps } from 'next';
+import Link from 'next/link';
 import { Ninja } from '../../interfaces';
 import styles from '../../styles/Ninjas.module.scss';
 
@@ -24,11 +25,11 @@ const NinjasPage: React.FC<NinjasPageInterface> = ({ ninjas }) => {
     <div>
       <h1>Ninjas Page</h1>
       {ninjas.map(ninja => (
-        <div key={ninja.id}>
+        <Link href={`/ninjas/${ninja.id}`} key={ninja.id}>
           <a className={styles.single}>
             <h3>{ninja.name}</h3>
           </a>
-        </div>
+        </Link>
       ))}
     </div>
   );
