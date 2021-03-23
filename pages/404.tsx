@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 const NotFound = () => {
-  //router
+  //router & local state
   const router = useRouter();
   //redirecting
   useEffect(() => {
