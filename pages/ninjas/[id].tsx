@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { Ninja } from '../../interfaces';
+import Head from 'next/head';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const { data }: { data: Ninja[] } = await axios.get(
@@ -36,12 +37,18 @@ interface NinjaDetailsProps {
 
 const NinjaDetails: React.FC<NinjaDetailsProps> = ({ ninja }) => {
   return (
-    <div>
-      <h1>{ninja.name}</h1>
-      <p>{ninja.email}</p>
-      <p>{ninja.website}</p>
-      <p>{ninja.address.city}</p>
-    </div>
+    <>
+      <Head>
+        <title>Ninja List | {ninja.name}</title>
+        <meta name="keywords" content="ninja" />
+      </Head>
+      <div>
+        <h1>{ninja.name}</h1>
+        <p>{ninja.email}</p>
+        <p>{ninja.website}</p>
+        <p>{ninja.address.city}</p>
+      </div>
+    </>
   );
 };
 
