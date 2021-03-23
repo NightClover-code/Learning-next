@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import styles from '../styles/Home.module.scss';
 
 const HomePage: React.FC = () => (
   <div className="home__page">
     <img src="" />
-    <h1>Hello Next.js 👋</h1>
+    <h1>Hello Ninjas 👋</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat culpa quia
       neque fugit voluptatum tenetur aspernatur nam consequatur quod asperiores,
@@ -16,7 +17,7 @@ const HomePage: React.FC = () => (
       laboriosam facilis iste! Earum labore totam ullam numquam assumenda?
     </p>
     <Link href="/ninjas">
-      <a>See Ninja Listing</a>
+      <a className={styles.btn}>See Ninja Listing</a>
     </Link>
   </div>
 );

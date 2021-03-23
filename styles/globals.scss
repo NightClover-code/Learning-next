@@ -20,12 +20,12 @@ nav {
   justify-content: flex-end;
   align-items: flex-end;
   border-bottom: 1px solid #ddd;
-}
-nav a {
-  margin-left: 12px;
-}
-nav .logo {
-  margin-right: auto;
+  .logo {
+    margin-right: auto;
+    a {
+      margin-left: 12px;
+    }
+  }
 }
 footer {
   display: block;
