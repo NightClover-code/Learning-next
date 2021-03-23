@@ -1,10 +1,7 @@
 import Link from 'next/link';
-import Footer from '../components/Footer';
-import NavBar from '../components/NavBar';
 
 const HomePage: React.FC = () => (
   <div className="home__page">
-    <NavBar />
     <img src="" />
     <h1>Hello Next.js 👋</h1>
     <p>
@@ -21,7 +18,6 @@ const HomePage: React.FC = () => (
     <Link href="/ninjas">
       <a>See Ninja Listing</a>
     </Link>
-    <Footer />
   </div>
 );
 export default HomePage;
