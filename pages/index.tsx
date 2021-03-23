@@ -7,7 +7,8 @@ const { title, text, btn } = styles;
 const HomePage: React.FC = () => (
   <>
     <Head>
-      <title>Ninja List | Welcome</title>
+      <title>Ninja List | Home</title>
+      <meta name="keywords" content="ninjas" />
     </Head>
     <div className="home__page">
       <h1 className={title}>Hello Ninjas 👋</h1>
