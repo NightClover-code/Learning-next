@@ -1,5 +1,9 @@
 const NinjasPage = () => {
-  return <div>NinjasPage</div>;
+  return (
+    <div>
+      <h1>Ninjas Page</h1>
+    </div>
+  );
 };
 
 export default NinjasPage;

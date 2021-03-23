@@ -7,6 +7,8 @@ const NavBar = () => {
         <h1>Ninja List</h1>
       </div>
       <Link href="/home">Home</Link>
+      <Link href="/home">About</Link>
+      <Link href="/home">Ninjas Listing</Link>
     </nav>
   );
 };

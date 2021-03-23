@@ -1,5 +1,9 @@
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
+
 const HomePage = () => (
-  <div className="app__container">
+  <div className="home__page">
+    <NavBar />
     <h1>Hello Next.js 👋</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat culpa quia
@@ -12,6 +16,7 @@ const HomePage = () => (
       tenetur hic, fugit vero quasi, debitis illum, libero qui dolores labore
       laboriosam facilis iste! Earum labore totam ullam numquam assumenda?
     </p>
+    <Footer />
   </div>
 );
 
